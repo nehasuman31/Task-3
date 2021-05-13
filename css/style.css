@@ -20,11 +20,11 @@ body {
    padding: 1em;
 }
 
-.navbar-nav {
+#navlist {
    margin-left: auto;
 }
 
-.navbar {
+#main-nav {
    background-color: #007bff;
 }
 
@@ -117,11 +117,13 @@ ul.social-network li {
 
 #btn {
    float: right;
+   background-color: none;
    border: 1px solid black;
+   padding: 8px;
 }
 
 #btn:hover {
-   border: none;
+   background-color: rgb(219, 217, 217);
 }
 
 #bord {
@@ -143,7 +145,7 @@ ul.social-network li {
    padding-left: 1em;
 }
 
-.form-control {
+#form-control {
    padding: 6%;
 }
 
@@ -158,5 +160,76 @@ ul.social-network li {
 }
 
 #btn2:hover {
+   background-color: rgb(219, 217, 217);
+}
+
+.navbar {
+   background-color: #eee;
+   border: none;
+}
+
+.navbar-nav>li>a {
+   padding-top: 5px !important;
+   padding-bottom: 5px !important;
+   color: black
+}
+
+.navbar-nav>li>a:hover {
+   color: #007ac3 !important;
+   ;
+}
+
+.navbar {
+   min-height: 32px !important
+}
+
+.active {
+   color: #007ac3 !important;
+}
+
+.dropdown-menu {
+   z-index: 1001;
+}
+
+.header {
+   z-index: 999;
+}
+
+.dropdown-toggle::after {
+   content: none;
+}
+
+#cardreg {
+   border: 2px solid #007ac3;
+}
+
+#crd-header {
+   background-color: #007ac3;
+}
+
+#form {
+   display: table;
+}
+
+#p {
+   display: table-row;
+}
+
+#label {
+   display: inline-block;
+   width: 150px;
+   text-align: right;
+}
+
+#crdbody {
+   margin-bottom: 10px;
+   float: left;
+}
+
+#cancelbtn {
+   border: 1px solid black;
+}
+
+#cancelbtn:hover {
    background-color: rgb(219, 217, 217);
 }

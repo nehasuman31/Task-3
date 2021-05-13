@@ -1,0 +1,114 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://use.fontawesome.com/releases/v5.15.3/js/all.js" data-auto-a11y="true"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="/js/app.js"></script>
+</head>
+
+<body>
+
+    <div class="banner" id="bord">
+        <div class="container-fluid">
+            <a href="index.html"><img src="images/logo.svg" style="width: 20%;"></a>
+        </div>
+
+    </div>
+    <br>
+    <section class="py-5 section-1">
+        <div class="container py-5 text-center">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="row">
+                        <h2 style="padding-left: 15px;">Registration</h2>
+
+                    </div>
+                    <br>
+                    <div class="row">
+                        <h5><span class="badge badge-pill badge-dark ml-3">1</span></h5>
+                        <p class="ml-2"><b>Your info</b></p>
+                        <h5><span class="badge badge-pill badge-dark ml-3">2</span></h5>
+                        <p class="ml-2">Review</p>
+                    </div>
+                    <br>
+                    <div class="row">
+                        <div class="container">
+                            <div class="card" id="cardreg" style="width: 100%;">
+                                <div class="card-header" id="crd-header">
+                                    <h5 style="float:left;color:#fff"><b>Your Info</b></h5>
+                                </div>
+                                <div class="card-body" id="crdbody">
+                                    <form class="form" name="myform" id="needs-validation" role="form" autocomplete="off" method="get" action="review.html" novalidate>
+                                        <div class="form-group row">
+                                            <label class="col-lg-3 col-form-label form-control-label"><b>Subscriber/Member ID</b></label>
+                                            <div class="col-lg-3">
+                                                <input class="form-control" type="text" id="memid" name="memid" placeholder="e.g. 123456789" required>
+                                            </div>
+                                        </div>
+                                        <div class="form-group row">
+                                            <label class="col-lg-3 col-form-label form-control-label"><b>First Name</b></label>
+                                            <div class="col-lg-3">
+                                                <input class="form-control" type="text" id="fname" name="fname" placeholder="e.g. john" required>
+                                            </div>
+                                        </div>
+                                        <div class="form-group row">
+                                            <label class="col-lg-3 col-form-label form-control-label"><b>Last Name</b></label>
+                                            <div class="col-lg-3">
+                                                <input class="form-control" type="text" id="lname" name="lname" placeholder="e.g. Doe" required>
+                                            </div>
+                                        </div>
+                                        <div class="form-group row">
+                                            <label class="col-lg-3 col-form-label form-control-label"><b>Date of Birth</b></label>
+                                            <div class="col-lg-3">
+                                                <input class="form-control" id="date" type="date" placeholder="e.g. Doe" required>
+                                            </div>
+
+                                        </div>
+                                        <div class="form-group row">
+                                            <div class="col-lg-3">
+                                                <br>
+                                                <button class="btn btn-primary" onclick="testVariable()" type="submit">Continue</button>
+                                                <a href="Login.html" class="btn btn-light" id="cancelbtn"><b style="color:navy;">Cancel</b></a>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+
+                        </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        </div>
+        </div>
+        </div>
+    </section>
+</body>
+<script>
+    (function() {
+        "use strict";
+        window.addEventListener("load", function() {
+            var form = document.getElementById("needs-validation");
+            form.addEventListener("submit", function(event) {
+                if (form.checkValidity() == false) {
+                    event.preventDefault();
+                    event.stopPropagation();
+                }
+                form.classList.add("was-validated");
+            }, false);
+        }, false);
+    }());
+</script>
+
+</html>

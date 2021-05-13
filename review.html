@@ -1,0 +1,105 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://use.fontawesome.com/releases/v5.15.3/js/all.js" data-auto-a11y="true"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="/js/app.js"></script>
+</head>
+
+<body>
+
+    <div class="banner" id="bord">
+        <div class="container-fluid">
+            <a href="index.html"><img src="images/logo.svg" style="width: 20%;"></a>
+        </div>
+
+    </div>
+    <br>
+    <section class="py-5 section-1">
+        <div class="container py-5 text-center">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="row">
+                        <h2 style="padding-left: 15px;">Registration</h2>
+
+                    </div>
+                    <br>
+                    <div class="row">
+                        <h5><span class="badge badge-pill badge-dark ml-3">1</span></h5>
+                        <p class="ml-2"><b>Your info</b></p>
+                        <h5><span class="badge badge-pill badge-dark ml-3">2</span></h5>
+                        <p class="ml-2"><b>Review</b></p>
+                    </div>
+                    <br>
+                    <div class="row">
+                        <div class="container">
+                            <div class="card" id="cardreg" style="width: 100%;">
+                                <div class="card-header" id="crd-header">
+                                    <h5 style="float:left;color:#fff"><b>Review</b></h5>
+                                </div>
+                                <div class="card-body" id="crdbody">
+                                    <form class="form" id="needs-validation" role="form" autocomplete="off" novalidate>
+                                        <div class="form-group row">
+                                            <label class="col-lg-3 col-form-label form-control-label"><b>Subscriber/Member ID:</b></label>
+                                            <p class="pt-1"><b id="memid"></b></p>
+
+                                        </div>
+                                        <div class="form-group row">
+                                            <label class="col-lg-3 col-form-label form-control-label"><b>First Name:</b></label>
+                                            <p class="pt-1"><b id="fname"></b></p>
+                                        </div>
+                                        <div class="form-group row">
+                                            <label class="col-lg-3 col-form-label form-control-label"><b>Last Name:</b></label>
+                                            <p class="pt-1"><b id="lname"></b></p>
+                                        </div>
+                                        <div class="form-group row">
+                                            <label class="col-lg-3 col-form-label form-control-label"><b>Date of Birth:</b></label>
+                                            <p class="pt-1"><b id="date"></b></p>
+
+                                        </div>
+                                        <div class="form-group row">
+                                            <div class="col-lg-3">
+                                                <br>
+                                                <button class="btn btn-primary" type="submit">Confirm</button>
+                                                <a href="register.html" class="btn btn-light" id="cancelbtn"><b style="color:navy;">Cancel</b></a>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+
+                        </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        </div>
+        </div>
+        </div>
+    </section>
+</body>
+<script>
+    window.onload = function() {
+
+        let memid = sessionStorage.getItem("memid");
+        document.getElementById("memid").innerHTML = memid;
+        let fname = sessionStorage.getItem("fname");
+        document.getElementById("fname").innerHTML = fname;
+        let lname = sessionStorage.getItem("lname");
+        document.getElementById("lname").innerHTML = lname;
+        let date = sessionStorage.getItem("date");
+        document.getElementById("date").innerHTML = date;
+    };
+</script>
+
+</html>
