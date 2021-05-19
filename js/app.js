@@ -7,4 +7,5 @@ function testVariable() {
     sessionStorage.setItem("fname", strText1);
     sessionStorage.setItem("lname", strText2);
     sessionStorage.setItem("date", strText3);
+    console.log("strText");
 }

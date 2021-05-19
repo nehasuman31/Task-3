@@ -2,11 +2,15 @@ body {
    overflow-x: hidden;
 }
 
+.section-1 {
+   background-color: #fff;
+}
+
 .card-block {
    background: #003C55!important;
 }
 
-#card-content:hover {
+.card-deck>.card:hover {
    border: 1px solid grey;
 }
 
@@ -25,7 +29,7 @@ body {
 }
 
 #main-nav {
-   background-color: #007bff;
+   background-color: #0067a3 !important;
 }
 
 #carousel #carousel-indicators {
@@ -37,10 +41,6 @@ body {
    left: 0;
    right: 0;
    width: 100%;
-}
-
-#carousel-item {
-   height: 350px;
 }
 
 #carousel-indicators li {
@@ -145,7 +145,11 @@ ul.social-network li {
    padding-left: 1em;
 }
 
-#form-control {
+#uname1 {
+   padding: 6%;
+}
+
+#pwd1 {
    padding: 6%;
 }
 
@@ -163,23 +167,18 @@ ul.social-network li {
    background-color: rgb(219, 217, 217);
 }
 
-.navbar {
+#topnav {
    background-color: #eee;
    border: none;
 }
 
-.navbar-nav>li>a {
+#topnav>.navbar-nav>li>a {
    padding-top: 5px !important;
    padding-bottom: 5px !important;
    color: black
 }
 
-.navbar-nav>li>a:hover {
-   color: #007ac3 !important;
-   ;
-}
-
-.navbar {
+#topnav {
    min-height: 32px !important
 }
 
@@ -233,3 +232,107 @@ ul.social-network li {
 #cancelbtn:hover {
    background-color: rgb(219, 217, 217);
 }
+
+.section-3 {
+   background-color: #f5f5f5;
+}
+
+.wrapper {
+   background-color: #003C55!important;
+}
+
+.block-inner {
+   text-align: center;
+   padding: 20px;
+   color: #fff;
+   font-size: x-large;
+}
+
+.stretch-card>.card {
+   width: 100%;
+   min-width: 100%
+}
+
+body {
+   background-color: #f9f9fa
+}
+
+.flex {
+   -webkit-box-flex: 1;
+   -ms-flex: 1 1 auto;
+   flex: 1 1 auto
+}
+
+@media (max-width:991.98px) {
+   .padding {
+       padding: 1.5rem
+   }
+}
+
+@media (max-width:767.98px) {
+   .padding {
+       padding: 1rem
+   }
+}
+
+.padding {
+   padding: 3rem
+}
+
+.owl-carousel .item img {
+   display: block;
+   width: 100%;
+   height: auto;
+   
+}
+
+.owl-carousel {
+   margin-bottom: 15px
+}
+#card-carousel{
+   border:1px solid grey;
+   border-radius: 8px;
+}
+#cardcar {
+   border-radius: 10px;
+}
+
+#covidbanner {
+   background-color: rgba(255, 237, 186);
+}
+
+#mainnav {
+   background-color: #0067a3 !important;
+}
+
+nav.main ul {
+   padding-left: 0;
+   list-style-type: none;
+}
+
+nav.main .megamenu {
+   padding: 20px 20px;
+   position: absolute;
+   top: auto;
+   left: 0;
+   right: 0;
+   max-width: 1500px;
+   width: 100%;
+   margin-left: auto;
+   margin-right: auto;
+   background-color: #00437b;
+   color: #fff;
+}
+
+
+#navbarnav>li>a {
+   color: #fff;
+}
+
+#navbarnav>li>a:hover {
+   border-bottom: 2px solid #fff;
+}
+.navbar-toggler-icon:not(.collapsed).navbar-toggler-icon{
+   display: inline;
+   }
+ 

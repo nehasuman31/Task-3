@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -10,12 +11,14 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script src="https://use.fontawesome.com/releases/v5.15.3/js/all.js" data-auto-a11y="true"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.css" rel="stylesheet" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.js"></script>
     <link rel="stylesheet" href="css/style.css">
 
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-sm">
+    <nav class="navbar navbar-expand-sm" id="topnav">
         <ul class="nav navbar-nav ml-auto">
             <li class="nav-item">
                 <a class="nav-link" href="#"><b>Home</b></a>
@@ -39,7 +42,7 @@
     </nav>
     <div class="banner">
         <div class="container-fluid">
-            <img src="images/logo.svg" style="width: 20%;">
+            <img src="images/logo.svg" style="width: 20%;" alt="img">
             <a href="#" class="btn dropdown-toggle" data-toggle="dropdown" id="btn"><b style="color:navy;">Login / Register</b></a>
             <div class="dropdown-menu">
                 <a class="dropdown-item" href="Login.html">Member</a>
@@ -49,34 +52,303 @@
                 <a class="dropdown-item" href="#">Provider</a>
             </div>
         </div>
-
+        <br>
     </div>
-    <br>
+
 
     <header class="header sticky-top">
-        <nav class="navbar navbar-expand-lg navbar-light py-2" id="main-nav">
-            <div class="container">
+        <nav class="navbar navbar-dark navbar-expand-lg  main" id="mainnav">
+            <div class="container-fluid">
 
-                <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                <button class="navbar-toggler" data-target="#navbarSupportedContent" data-toggle="collapse" type="button"><span class="navbar-toggler-icon"></span></button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav" id="navlist">
-                        <li class="nav-item"><a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="#" style="color: #fff;"><b>Home</b></a></li>
+                    <ul class="navbar-nav" id="navbarnav">
+                        <li class="nav-item mx-3"><a class="nav-link" href="#">Home</a></li>
+                        <li class="nav-item mx-3 dropdown position-static">
+                            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">Find a Plan</a>
+                            <ul class="dropdown-menu megamenu">
+                                <div class="row">
+                                    <li class="col-md-4">
 
-                        <li class="nav-item"><a class="nav-link" href="#" style="color: #fff;"><b>Find A Plan</b></a></li>
-                        <li class="nav-item"><a class="nav-link" href="#" style="color: #fff;"><b>How it Works</b></a></li>
-                        <li class="nav-item"><a class="nav-link" href="#" style="color: #fff;"><b>Find A Doctor</b></a></li>
-                        <li class="nav-item"><a class="nav-link" href="#" style="color: #fff;"><b>Health and Wellness</b></a></li>
+                                        <h2>Find a Plan</h2>
+
+                                        <ul>
+                                            <h6 class="list-header">Individual & Family Health Plans</h6>
+                                            <hr>
+                                            <li>
+                                                <a href="#">Compare Plans</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">When to Enroll</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">What is Covered</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Managing Prescriptions</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="col-md-4">
+                                        <ul>
+                                            <h6 class="list-header">Health Insurance for Business</h6>
+                                            <hr>
+                                            <li>
+                                                <a href="#">Health Insurance for Sole Proprietors</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Small Business Health Plans</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Medium & Large Business Health Plans
+                                                </a>
+                                            </li>
+                                            <br>
+                                            <h6 class="list-header">Medicare Plans</h6>
+                                            <hr>
+                                            <li>
+                                                <a href="#">View Plan Information</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Learn About Medicare</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="col-md-4">
+                                        <a href="#"><img src="images/Menu_Promo.png" alt="img" class="img-fluid"></a>
+                                    </li>
+                                </div>
+                            </ul>
+                        </li>
+                        <li class="nav-item mx-3 dropdown position-static">
+                            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">How it Works</a>
+                            <ul class="dropdown-menu megamenu">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <h2>How it Works</h2>
+                                    </div>
+                                    <br>
+                                    <li class="col-md-4">
+                                        <ul>
+                                            <h6 class="list-header">Health Insurance Basics</h6>
+                                            <hr>
+                                            <li>
+                                                <a href="#">Benefits & Coverage</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Health Insurance Premiums</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Copays Coinsurance & Deductibles</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Health Savings Account (HSA)</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Flexible Spending Account (FSA)</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Claims</a>
+                                            </li>
+                                            <br>
+                                            <a href="#">
+                                                <h6 class="list-header">Glossary of Health Insurance Terms</h6>
+                                            </a>
+                                        </ul>
+                                    </li>
+                                    <li class="col-md-4">
+                                        <ul>
+                                            <h6 class="list-header">Membership Benefits</h6>
+                                            <hr>
+                                            <li>
+                                                <a href="#">Access to Nationwide Blue Network</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Membership Rewards & Discounts</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Answers at Your Fingertips
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Local Support for Members
+                                                </a>
+                                            </li>
+                                            <br>
+                                            <a href="#">
+                                                <h6 class="list-header">High Deductible Health Plans</h6>
+                                            </a>
+                                            <a href="#">
+                                                <h6 class="list-header">Learn About Medicare</h6>
+                                            </a>
+
+                                        </ul>
+                                    </li>
+                                    <li class="col-md-4">
+                                        <a href="#"><img src="images/navPromo.png" alt="img" class="img-fluid"></a>
+                                    </li>
+                                </div>
+                            </ul>
+                        </li>
+                        <li class="nav-item mx-3 dropdown position-static">
+                            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">Find a Doctor</a>
+                            <ul class="dropdown-menu megamenu">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <h2>Find a Doctor</h2>
+                                    </div>
+                                    <br>
+                                    <li class="col-md-4">
+                                        <ul>
+                                            <li>
+                                                <a href="#">
+                                                    <h5 class="list-header">Find a Doctor, Provider or Facility
+                                                    </h5>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <h5 class="list-header">Find a Dentist</h5>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <h5 class="list-header">Find a Pharmacy</h5>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <h5 class="list-header">Telemedicine</h5>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="col-md-4">
+                                        <ul>
+                                            <li>
+                                                <a href="#">
+                                                    <h5 class="list-header">Find Cancer Treatment Centers
+                                                    </h5>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <h5 class="list-header">Compare Hospital Quality</h5>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <h5 class="list-header">Estimate Medical Costs</h5>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="col-md-4">
+                                        <a href="#"><img src="images/Find_Doctor_Menu_Promo.png" alt="img" class="img-fluid"></a>
+                                    </li>
+                                </div>
+                            </ul>
+                        </li>
+                        <li class="nav-item mx-3 dropdown position-static">
+                            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">Health and Wellness</a>
+                            <ul class="dropdown-menu megamenu">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <h2>Health and Wellness</h2>
+                                    </div>
+                                    <br>
+                                    <li class="col-md-4">
+                                        <ul>
+                                            <h6 class="list-header">Preventive Health</h6>
+                                            <hr>
+                                            <li>
+                                                <a href="#">Taking Medications</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Screenings & Immunizations</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Fitness</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Nutrition</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Oral health</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Quit Smoking</a>
+                                            </li>
+                                            <br>
+                                            <a href="#">
+                                                <h6 class="list-header">Rewards & Incentives</h6>
+                                            </a>
+                                            <a href="#">
+                                                <h6 class="list-header">A Healthier Upstate (Blog)</h6>
+                                            </a>
+                                            <a href="#">
+                                                <h6 class="list-header">Caregiver Support</h6>
+                                            </a>
+                                        </ul>
+                                    </li>
+                                    <li class="col-md-4">
+                                        <ul>
+                                            <h6 class="list-header">Manage Your Health</h6>
+                                            <hr>
+                                            <li>
+                                                <a href="#">Care Management with Wellframe®</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Chronic & Complex Conditions</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Mental Health & Substance Use
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Health Care When You Need It
+                                                </a>
+                                            </li>
+                                            <br>
+
+                                            <h6 class="list-header">Advance Care Planning</h6>
+
+                                            <hr>
+                                            <li>
+                                                <a href="#">End of Life Care</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Completing Advance Directives</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Life-Sustaining Treatments
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Pain Management & Palliative Care
+                                                </a>
+                                            </li>
+
+                                        </ul>
+                                    </li>
+                                    <li class="col-md-4">
+                                        <a href="#"><img src="images/navPromo_wellness.png" alt="img" class="img-fluid"></a>
+                                    </li>
+                                </div>
+                            </ul>
+                        </li>
                     </ul>
-
                 </div>
             </div>
-
         </nav>
 
     </header>
-    <br>
+    <div class="banner text-center" id="covidbanner">
+        <i class="fa fa-exclamation-triangle" aria-hidden="true"></i>
+        <b>We're Here For You:</b> Stay informed about the <a href="#" style="color:#0067a3 !important;"><b>coronavirus (COVID -19)</b></a>
+    </div>
     <section>
-        <div class="container-fluid">
+       
             <div class="row">
                 <div class="col-lg-12">
                     <div id="slider" class="carousel slide" data-ride="carousel">
@@ -103,29 +375,41 @@
                         </ol>
 
                         <div class="carousel-inner ">
-                            <div class="carousel-item active " id="carousel-item">
-                                <img class="d-block w-100 " src="images/doctor.jpg">
+                            <div class="carousel-item active " style="height:450px">
+                                <img class="d-block w-100 " src="images/Covid_Facts_banner.jpg">
                             </div>
-                            <div class="carousel-item " id="carousel-item">
-                                <img class="d-block w-100 " src="images/insurance.jpg ">
+                            <div class="carousel-item " style="height:450px" >
+                                <img class="d-block w-100 " src="images/EX-CorpSite-Insurance.jpg ">
                             </div>
-                            <div class="carousel-item " id="carousel-item">
-                                <img class="d-block w-100 " src="images/people.jpg">
+                            <div class="carousel-item " style="height:450px" >
+                                <img class="d-block w-100 " src="images/CorpSite Medicare STARS Banner.png">
                             </div>
-                            <div class="carousel-item " id="carousel-item">
-                                <img class="d-block w-100 " src="images/image3.jpg ">
+                            <div class="carousel-item " style="height:450px" >
+                                <img class="d-block w-100 " src="images/EX-Corporate-Racial EquityHomagepage-Image.jpg ">
                             </div>
-
-
                         </div>
+
                         <a class="carousel-control-prev" href="#slider" data-slide="prev">
-                            <div class="container" id="control"> <span class="fa fa-arrow-circle-left fa-2x"></span></div>
+                            <div class="container"> <span class="fa fa-arrow-circle-left fa-2x"></span></div>
 
                         </a>
                         <a class="carousel-control-next" href="#slider" data-slide="next">
-                            <div class="container" id="control"><span class="fa fa-arrow-circle-right fa-2x"></span></div>
+                            <div class="container"><span class="fa fa-arrow-circle-right fa-2x"></span></div>
 
                         </a>
+                    </div>
+                </div>
+            </div>
+       
+    </section>
+
+    <section class="pt-1">
+        <div class="row text-center">
+            <div class="col-md-12 text-center">
+                <div class="wrapper">
+                    <div class="block-inner">
+                        Paying Your Monthly Premium
+                        <a class="btn btn-primary ml-md-5" id="paybtn"><b>Pay Your Bill</b></a>
                     </div>
                 </div>
             </div>
@@ -133,18 +417,7 @@
     </section>
 
 
-    <div class="row text-center">
-        <div class="col-md-12 text-center">
-            <div class="card card-block justify-content-center">
-                <div class="card-body">
-                    <b style="color: #fff;">Paying Your Monthly Premium</b>
-                    <button type="button" class="btn btn-primary">Pay Your Bill</button>
-                </div>
-            </div>
-        </div>
-    </div>
 
-    </div>
 
     <section class="py-5 section-3">
         <div class="container">
@@ -154,19 +427,19 @@
                 <div class="container">
                     <div class="card-deck">
 
-                        <div class="card bg-light" id="card-content">
+                        <div class="card bg-light">
                             <div class="card-body text-center">
                                 <a href="#"><img class="card-img-top" src="images/home-3-lg.svg" alt="Card image" style="width:100%"></a>
                                 <p class="card-text"></p>
                             </div>
                         </div>
-                        <div class="card bg-light" id="card-content">
+                        <div class="card bg-light">
                             <div class="card-body text-center">
                                 <a href="#"><img class="card-img-top" src="images/home-2-lg.svg" alt="Card image" style="width:100%"></a>
 
                             </div>
                         </div>
-                        <div class="card bg-light " id="card-content">
+                        <div class="card bg-light">
                             <div class="card-body text-center">
                                 <a href="#"><img class="card-img-top" src="images/home-1-lg.svg" alt="Card image" style="width:100%"></a>
                             </div>
@@ -180,54 +453,158 @@
     </section>
 
     <section class="section-4">
-        <div class="container py-3 text-center">
-            <div class="row">
-                <div class="col-xs-6 col-sm-6 col-md-6">
-                    <div class="container">
-                        <img src="images/happy.jpg" style="width: 100%;" class="img-responsive">
-                    </div>
+        <div class="row">
+            <div class="col-xs-6 col-sm-6 col-md-6">
+                <img src="images/img.png" style="width: 100%;height:100%" class="img-fluid" alt="img">
 
-                </div>
-                <div class="col-xs-6 col-sm-6 col-md-6">
-                    <div class="container pt-5">
-                        <h1>Newly Enrolled?</h1>
-                        <p>Create an online account to gain access to the benefits and extras that are part of your plan, and to connect with care.</p>
-                        <button type="button" class="btn btn-primary"><b>Register Now</b></button>
-                    </div>
+
+            </div>
+            <div class="col-xs-6 col-sm-6 col-md-6">
+                <div class="container mt-5">
+                    <h1>Newly Enrolled?</h1>
+                    <p>Create an online account to gain access to the benefits and extras that are part of your plan, and to connect with care.</p>
+                    <button type="button" class="btn btn-primary"><b>Register Now</b></button>
                 </div>
             </div>
         </div>
+        <br>
     </section>
     <section class=" section-4">
-        <div class="container-fluid py-5 text-center">
-            <h1>Health and Wellness</h1>
-            <br>
-            <div class="row">
-                <div class="col-lg-12">
-                    <div id="demo" class="carousel slide" data-ride="carousel">
-                        <ul class="carousel-indicators">
-                            <li data-target="#demo" data-slide-to="0" class="active"></li>
-                            <li data-target="#demo" data-slide-to="1"></li>
-                            <li data-target="#demo" data-slide-to="2"></li>
-                        </ul>
-                        <div class="carousel-inner">
-                            <div class="carousel-item active">
-                                <img src="images/incyte_involved.jpg" alt="Los Angeles">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="images/investors_banner.jpg" alt="Chicago">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="images/joinourteam.jpg" alt="New York">
-                            </div>
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <h1>Health and Wellness</h1>
+            </div>
+
+        </div>
+
+        <br>
+        <div class="row">
+            <div class="col-lg-12">
+
+                <div id="demo" class="carousel slide" data-ride="carousel">
+
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="images/incyte_involved.jpg" alt="Los Angeles">
                         </div>
+                        <div class="carousel-item">
+                            <img src="images/investors_banner.jpg" alt="Chicago">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="images/joinourteam.jpg" alt="New York">
+                        </div>
+                    </div>
+                    <ul class="carousel-indicators">
+                        <li data-target="#demo" data-slide-to="0" class="active"></li>
+                        <li data-target="#demo" data-slide-to="1"></li>
+                        <li data-target="#demo" data-slide-to="2"></li>
+                    </ul>
 
+                </div>
+            </div>
+        </div>
 
+    </section>
+    <section>
+        <div class="page-content page-container" id="page-content">
+            <div class="padding">
+                <div class="row">
+                    <div class="col-lg-12 text-center">
+                        <h1>Latest Community News</h1>
+                    </div>
+
+                </div>
+                <br>
+                <div class="row container-fluid" >
+
+                    <div class="col-lg-12 grid-margin stretch-card">
+                        <div class="card" id="card-carousel">
+
+                            <div class="owl-carousel">
+
+                                <div class="item">
+                                    <div class="card" style="width:400px">
+                                        <img class="card-img-top" src="/images/caregiver-flu.jpg" alt="Card image" style="width:100%">
+                                        <div class="card-body border-left">
+                                            <h4 class="card-title"><a href="https://www.ahealthierupstate.org/a-healthier-community/flu-shot-2020/">Why I Will Be In Line For A Flu Shot This Year</a></h4>
+                                            <p class="card-text"><a href="https://www.ahealthierupstate.org/a-healthier-community/flu-shot-2020/">For many years, Ann Himmler of Monroe County, was required to get a flu shot every year because she was a Hospice volunteer...</a></p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="card" style="width:400px">
+                                        <img class="card-img-top" src="/images/volunteer-virtually.jpg" alt="Card image" style="width:100%">
+                                        <div class="card-body border-left">
+                                            <h4 class="card-title"><a href="https://www.ahealthierupstate.org/stuff-we-like/smithsonian-transcription-center/">Volunteering Virtually And A Fulfilling New Hobby</a></h4>
+                                            <p class="card-text"><a href="https://www.ahealthierupstate.org/stuff-we-like/smithsonian-transcription-center/">Grateful to work for a company that gives employees one paid volunteer day per year, I was straining to find a virtual opportunity that...</a></p>
+
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="item">
+                                    <div class="card" style="width:400px">
+                                        <img class="card-img-top" src="/images/winter-gems.jpg" alt="Card image" style="width:100%">
+                                        <div class="card-body border-left">
+                                            <h4 class="card-title"><a href="https://www.ahealthierupstate.org/hidden-gems/winter-mohawk-valley/">Hidden Gems: Winter In The Mohawk Valley</a></h4>
+                                            <p class="card-text"><a href="https://www.ahealthierupstate.org/hidden-gems/winter-mohawk-valley/">Those of us who choose to live in upstate New York do so for a variety of reasons. For many of us, one of the biggest is... </a></p>
+
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="item">
+                                    <div class="card" style="width:400px">
+                                        <img class="card-img-top" src="/images/Dentistry.jpg" alt="Card image" style="width:100%">
+                                        <div class="card-body border-left">
+                                            <h4 class="card-title"><a href="https://www.ahealthierupstate.org/stuff-we-like/how-has-dentistry-been-impacted-by-covid-19/">Expert Q&A: How Has Dentistry Been Impacted By COVID-19? </a></h4>
+                                            <p class="card-text"><a href="https://www.ahealthierupstate.org/stuff-we-like/how-has-dentistry-been-impacted-by-covid-19/">Our expert:  Dr. William Zugner has been a clinical peer review consultant for Excellus BlueCross BlueShield for more than six years...</a></p>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="card" style="width:400px">
+                                        <img class="card-img-top" src="/images/Flu-cases.jpg" alt="Card image" style="width:100%">
+                                        <div class="card-body border-left">
+                                            <h4 class="card-title"><a href="https://www.ahealthierupstate.org/a-healthier-community/why-are-there-so-few-flu-cases-this-year/"> Why Are There So Few Flu Cases This Year?</a></h4>
+                                            <p class="card-text"><a href="https://www.ahealthierupstate.org/a-healthier-community/why-are-there-so-few-flu-cases-this-year/"> The prevalence of flu in New York state is way down compared to this time last year. That’s according to an analysis of.... </a></p>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                            </div>
+
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
+        <script>
+            $(document).ready(function() {
+
+                $(".owl-carousel").owlCarousel({
+
+                    autoPlay: 3000,
+                    items: 3,
+                    itemsDesktop: [1199, 3],
+                    itemsDesktopSmall: [979, 3],
+                    center: true,
+                    nav: true,
+                    loop: true,
+                    responsive: {
+                        600: {
+                            items: 3
+                        }
+                    }
+
+                });
+
+            });
+        </script>
     </section>
+
     <section class="py-5 section-4">
         <div class="container">
             <div class="row">
@@ -401,25 +778,26 @@
                     </div>
 
                 </div>
+            </div>
+        </div>
     </section>
+    <script>
+        var acc = document.getElementsByClassName("accordion");
+        var i;
+
+        for (i = 0; i < acc.length; i++) {
+            acc[i].addEventListener("click", function() {
+                this.classList.toggle("active");
+                var panel = this.nextElementSibling;
+                if (panel.style.display === "block") {
+                    panel.style.display = "none";
+                } else {
+                    panel.style.display = "block";
+                }
+            });
+        }
+    </script>
 </body>
-<script>
-    var acc = document.getElementsByClassName("accordion");
-    var i;
 
-    for (i = 0; i < acc.length; i++) {
-        acc[i].addEventListener("click", function() {
-            this.classList.toggle("active");
-            var panel = this.nextElementSibling;
-            if (panel.style.display === "block") {
-                panel.style.display = "none";
-            } else {
-                panel.style.display = "block";
-            }
-        });
-    }
-</script>
-
-</script>
 
 </html>

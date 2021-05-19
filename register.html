@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -11,18 +12,17 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script src="https://use.fontawesome.com/releases/v5.15.3/js/all.js" data-auto-a11y="true"></script>
     <link rel="stylesheet" href="css/style.css">
-    <script src="/js/app.js"> </script>
+    <script src="/js/app.js"></script>
 </head>
 
 <body>
 
     <div class="banner" id="bord">
         <div class="container-fluid">
-            <a href="index.html"><img src="images/logo.svg" style="width: 20%;"></a>
+            <a href="index.html"><img src="images/logo.svg" style="width: 20%;" alt="img"></a>
         </div>
 
     </div>
-    <br>
     <section class="py-5 section-1">
         <div class="container py-5 text-center">
             <div class="row">
@@ -46,7 +46,7 @@
                                     <h5 style="float:left;color:#fff"><b>Your Info</b></h5>
                                 </div>
                                 <div class="card-body" id="crdbody">
-                                    <form class="form" name="myform" id="needs-validation" role="form" autocomplete="off" method="get" action="review.html" novalidate>
+                                    <form class="form" name="myform" id="needs-validation" method="get" action="review.html" novalidate>
                                         <div class="form-group row">
                                             <label class="col-lg-3 col-form-label form-control-label"><b>Subscriber/Member ID</b></label>
                                             <div class="col-lg-3">
@@ -68,7 +68,7 @@
                                         <div class="form-group row">
                                             <label class="col-lg-3 col-form-label form-control-label"><b>Date of Birth</b></label>
                                             <div class="col-lg-3">
-                                                <input class="form-control" id="date" type="date" placeholder="e.g. Doe" required>
+                                                <input class="form-control" id="date" type="date" required>
                                             </div>
 
                                         </div>
@@ -83,32 +83,32 @@
                                 </div>
                             </div>
 
+
+
                         </div>
-                        </form>
                     </div>
                 </div>
             </div>
-        </div>
 
         </div>
-        </div>
-        </div>
+
     </section>
-</body>
-<script>
-    (function() {
-        "use strict";
-        window.addEventListener("load", function() {
-            var form = document.getElementById("needs-validation");
-            form.addEventListener("submit", function(event) {
-                if (form.checkValidity() == false) {
-                    event.preventDefault();
-                    event.stopPropagation();
-                }
-                form.classList.add("was-validated");
+    <script>
+        (function() {
+            "use strict";
+            window.addEventListener("load", function() {
+                var form = document.getElementById("needs-validation");
+                form.addEventListener("submit", function(event) {
+                    if (form.checkValidity() == false) {
+                        event.preventDefault();
+                        event.stopPropagation();
+                    }
+                    form.classList.add("was-validated");
+                }, false);
             }, false);
-        }, false);
-    }());
-</script>
+        }());
+    </script>
+</body>
+
 
 </html>
